@@ -3,7 +3,7 @@ from pyspark.ml.recommendation import ALS
 from pyspark.sql import Row
 from pyspark.sql.functions import lit
 
-# Simple ML algorithm based on ALS that finds a ten movie fitted to used (with ID = 0) based on his ratings
+# Simple ML algorithm based on ALS that finds a ten movie filtered to user (with ID = 0) based on his ratings
 
 # Load up movie ID -> movie name dictionary
 def load_movie_names():
